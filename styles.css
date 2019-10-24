@@ -1,0 +1,278 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;   
+}
+.title h2:nth-child(n){
+    margin-top: -8px;
+}
+.box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px;
+}
+.space {
+  margin-bottom: 16px;
+}
+.space-md {
+  margin-bottom: 32px;
+}
+.label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.label-stickers {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 22px;
+  color: #071723;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.label-stickers-qt {
+  font-size: 18px;
+  font-weight: 600;    
+}
+.label-obs{
+    margin-top: 30px;
+}
+input.quantidade-stickers{
+    height: 42px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20.01px;
+    line-height: 24px;
+    color: #071723 !important;
+}
+input::placeholder{
+    font-weight: bold;
+    color:#071723;
+}
+::placeholder{
+    color:#071723;
+}
+.label-obs{
+  font-size: 18px;
+  font-weight: 600;
+}
+.header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+}
+
+.header .title h2{
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.header .title h1 {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Inter;
+  color: #FFFFFF;
+}
+.check-a #text,
+.check-b #text,
+.check-c #text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #071723;
+    padding-bottom: 5px;    
+}
+
+input{  
+  all: unset;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 5px
+  color:white;
+}
+input:checked{
+  background: #2f3676;
+  width: 24px;
+  height: 24px;
+}
+.group {
+  margin-top: 10px;
+  max-width: 100px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px14
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color:#2F3676;
+  border-radius: 4px;
+}
+.group:hover input ~ .checkmark {
+  background-color: #191847;
+}
+.group input:checked ~ .checkmark {
+  background-color: #2F3676;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.group .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+.form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 8px;
+  color: #071723;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.fieldset{
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.fieldset-two {
+  padding: 0 32px;
+}
+.fieldset-tree {
+  padding: 0 32px;
+}
+.counter{
+    display: flex;
+    align-items: center;
+}
+.counter svg {
+  fill: #2f3676;
+  cursor: pointer;
+}
+
+.counter input {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 8px;
+  width: 60px;   
+}
+
+.footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer button {
+  appearance: none;
+  background: #2f3676;
+  border: 2px transparent;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 32px;
+  cursor: pointer;
+    
+}
+.footer button:disabled{
+  background: #C5CFD6;
+  border: 2px solid #555555;
+  border-radius: 7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.footer button:focus,
+.footer button:hover {
+  border: 2px solid #2f3676;
+    box-sizing: border-box;
+  background: #191847;
+  cursor: pointer;
+  color:#ffffff;
+}

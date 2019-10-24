@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Teste Frontend VAGAS.com</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="title">
+                <h2>Formulário</h2>
+                    <h2>para compra de</h2>
+                <h1>Pacote de Stickers</h1>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="fieldset">
+                <div class="label-stickers">Quais stickers:                
+                    <label class="group">
+                      <input type="checkbox" id="stickerReact">
+                      <span class="checkmark"></span>React
+                    </label>
+
+                    <label class="group">
+                      <input type="checkbox" id="stickerVue">
+                      <span class="checkmark"></span>Vue
+                    </label>
+
+                    <label class="group">
+                      <input type="checkbox" id="stickerAngular">
+                      <span class="checkmark"></span>Angular
+                    </label>                
+                </div>                
+            </div>
+
+            <div class="fieldset-two">
+                <div class="label-stickers-qt">Quantos stickers de cada?</div>
+                <div class="counter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" id="botaoMenos">
+                        <path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z" /></svg>
+
+                    <input class="quantidade-stickers" id="quantidadeSticker" type="text" placeholder="0" value="0" disabled />
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" id="botaoMais">
+                        <path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" /></svg>
+                </div>
+            </div>
+
+            <div class="fieldset-tree">
+                <div class="label-obs">Observações:</div>
+                <textarea name="descricao" placeholder="Alguma dúvida? Recado?" id="blocoMSG"></textarea>
+            </div>
+
+            <div class="footer">
+                <button class="enviar" id="enviarDados" data-toggle="modal" data-target="#exampleModalTEST">Enviar</button>                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+      <!-- Modal -->
+  <div class="modal fade" id="exampleModalTEST" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          		<span aria-hidden="true">&times;</span>
+        	</button>
+		</div>
+		<div class="modal-body">
+		  <center>
+			  <h3 id="exibirMSG">
+				  
+			  </h3>
+		  </center>
+		</div>
+
+	  </div>
+	</div>
+  </div>
+    
+  <!-- CDN jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
